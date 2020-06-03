@@ -1,70 +1,102 @@
-legend {
-	text-align: center;
-	font-weight: 500;
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap");
+
+:root {
+  --primary-color: #264653;
+  --gray: #c4c4c4;
+  --secondary-color: #2a9d8f;
+  --component-color: #e76f51;
+  --white: #ffffff;
+  --black: #000000;
 }
-.flex-container {
-	display: flex;
-	background-color: #ffffff;
-	justify-content: center;
-	color: #ffffff;
-	margin-top: 5%;
-	margin-bottom: 5%;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-p{
-	padding-left: 110px;
-	font-size: 30px;
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
 }
-.first-box {
-	background-color: #264653;
-	font-family: Arial, Helvetica, sans-serif;
-	margin: 0px;
-	font-size: 20px;
-	width: 400px;
-	height: 400px;
-	padding-left: 100px;
-	padding-bottom: 40px;
+
+h1,
+h2,
+h3 {
+  font-weight: 300;
 }
-.second-box {
-	background-color: #2A9D8F;
-	font-family: Arial, Helvetica, sans-serif;
-	margin: 0px;
-	padding-left: 100px;
-	padding-bottom: 40px;
-	font-size: 20px;
-	width: 400px;
-	height: 400px;
+
+h1 {
+  font-size: 48px;
 }
-input[type=text] {
-	width: 70%;
-	padding: 6px 10px;
-	background-color: #c4c4c4;
-	border: 0ch;
+
+h2 {
+  font-size: 36px;
 }
-input[type=password] {
-	width: 70%;
-	padding: 6px 10px;
-	background-color: #c4c4c4;
-	border: 0ch;
+
+h3 {
+  font-size: 24px;
 }
-input[type=email] {
-	width: 70%;
-	padding: 6px 10px;
-	background-color: #c4c4c4;
-	border: 0ch;
+
+.login-flex-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.log {
-	height: 10px;
-	width: 75%;
-	padding-bottom: 18px;
-	padding-top: 5px;
-	background-color:#E76F51;
-	text-align: center;
+
+.auth-box {
+  width: 1100px;
+  height: 500px;
+  display: flex;
 }
-.sign {
-	height: 10px;
-	width: 75%;
-	padding-bottom: 18px;
-	padding-top: 5px;
-	background-color: #E76F51;
-	text-align: center;
+
+.boxes {
+  width: 50%;
+  height: 100%;
+  padding: 26px 50px;
+  color: var(--white);
+}
+
+.boxes h2 {
+  text-align: center;
+}
+
+.boxes input {
+  width: 100%;
+  height: 30px;
+  margin-top: 3px;
+  background-color: var(--gray);
+  border: none;
+  padding: 3px;
+}
+
+.boxes form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.boxes .form-element {
+  width: 80%;
+  margin: 5px;
+}
+
+.login-box {
+  background: var(--primary-color);
+}
+
+.sign-up-box {
+  background: var(--secondary-color);
+}
+
+input[type="submit"] {
+  background-color: var(--component-color);
+  color: var(--white);
+  margin-top: 5px;
+  height: 40px;
+  font-size: 18px;
+  font-weight: 300;
 }
