@@ -1,0 +1,23 @@
+.container {
+  min-height: 100vh;
+  min-width: 100vw;
+  padding: 40px 70px;
+  background-color: var(--primary-color);
+  color: white;
+  
+}
+.container > div {
+  margin-top: 1%;
+}
+.ts{
+  display: flex;
+}
+.ts >div {
+  margin-left: 5%;
+  padding-top: 0.5%;
+}
+input[type="submit"]{
+  background-color: var(--component-color);
+  width: 20%;
+  border: none;
+}
